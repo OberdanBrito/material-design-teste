@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div id="login" class="Login">
+    <h1 class="Login-heading">Sign in</h1>
+    <form id="login-form">
+        <div class="Login-field">
+            <input id="username" name="username" class="Login-input" type="text" required>
+            <label class="Login-label" for="username">Email</label>
+            <svg class="Login-field-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <g fill="#bbbbbb">
+                    <path d="M12 10.823l8.965-5.563C20.677 5.1 20.352 5 20 5H4c-.352 0-.678.1-.965.26L12 10.823z"/>
+                    <path d="M12.527 12.85c-.16.1-.344.15-.527.15s-.366-.05-.527-.15l-9.47-5.877C2.003 6.983 2 6.99 2 7v9c0 1.1.897 2 2 2h16c1.103 0 2-.9 2-2V7c0-.01-.003-.02-.003-.028l-9.47 5.877z"/>
+                </g>
+            </svg>
+        </div>
+        <div class="Login-field">
+            <input id="password" name="password" class="Login-input" type="password" required>
+            <label class="Login-label" for="password">Password</label>
+            <svg class="Login-field-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="#bbbbbb" d="M17 11V7c0-2.757-2.244-5-5-5-2.758 0-5 2.243-5 5v4c-1.103 0-2 .896-2 2v7c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2v-7c0-1.104-.897-2-2-2zm-5 7c-.828 0-1.5-.672-1.5-1.5S11.172 15 12 15s1.5.672 1.5 1.5S12.828 18 12 18zm3-7H9V7c0-1.654 1.346-3 3-3s3 1.346 3 3v4z"/>
+            </svg>
+        </div>
+        <div class="Login-forgotPassword">
+            <a class="Login-forgotPassword-link" href="#">Forgot Password?</a>
+        </div>
+        <button class="Login-button" aria-controls="status">Login</button>
+        <input type="hidden" name="client_id" value="testclient" />
+        <input type="hidden" name="grant_type" value="password" />
+    </form>
+    <div class="Login-alert" role="region" id="status" aria-live="assertive"></div>
+</div>
+</body>
+<script src="js/login.js"></script>
+</html>
